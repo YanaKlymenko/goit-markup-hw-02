@@ -1,19 +1,39 @@
+:root {
+  --backgraund-first-color: #2f303a;
+  --background-second-color: #f5f4fa;
+  --white-color: #ffffff;
+  --fist-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
 body {
-  font-family: Roboto, sans-serif;
-  color: #212121;
-  background: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  color: var(--fist-text-color);
+  background: var(--white-color);
 }
 .logo-accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .list {
   list-style: none;
 }
-/* Для исключений */
 .link {
+  text-decoration: none;
 }
 
-/* основной цвет текста #212121; */
-/* вторичный цвет  #757575; и #FFFFFF */
-/* акценты #2196F3 */
+/*----HEADER---- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.nav-link.current {
+  color: #2196f3;
+}
+
 /* футер rgba(255, 255, 255, 0.6); */
