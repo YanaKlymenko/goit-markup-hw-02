@@ -31,6 +31,11 @@ body {
 .link {
   text-decoration: none;
 }
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
 
 /*----HEADER---- */
 .logo {
@@ -43,7 +48,13 @@ body {
 .logo-header {
   color: var(--fist-text-color);
 }
-.nav-link.current {
+.nav-link.current,
+.nav-link:hover,
+.nav-link:focus,
+.footer-link:hover,
+.footer-link:focus,
+.footer-link-contact:hover,
+.footer-link-contact:focus {
   color: var(--accent-color);
 }
 .nav-list {
@@ -56,11 +67,8 @@ body {
   letter-spacing: 0.02em;
   color: currentColor;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-.header-list {
+.header-list,
+.advant-text {
   color: var(--second-text-color);
 }
 /* ----HERO---- */
@@ -85,6 +93,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
+  border: none;
 }
 /* ----ADVANT---- */
 .advant-subtitle {
@@ -93,12 +102,6 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--fist-text-color);
-}
-.advant-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--second-text-color);
 }
 /* ----ABOUT---- */
 .title {
@@ -128,8 +131,43 @@ body {
 .footer {
   background-color: var(--backgraund-first-color);
 }
-.logo-footer {
+.logo-footer,
+.footer-link {
+  color: var(--white-color);
+  font-style: normal;
+}
+.footer-link-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+/* ----PORTFOLIO---- */
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--fist-text-color);
+  background-color: var(--background-second-color);
+  cursor: pointer;
+  border: none;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
   color: var(--white-color);
 }
-
-/* футер rgba(255, 255, 255, 0.6); */
+/* ----GALERRY---- */
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--fist-text-color);
+}
+.gallery-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--second-text-color);
+}
