@@ -11,9 +11,19 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--fist-text-color);
   background: var(--white-color);
+  letter-spacing: 0.03em;
 }
-.logo-accent {
-  color: var(--accent-color);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .list {
   list-style: none;
@@ -28,12 +38,98 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
+.logo-header {
+  color: var(--fist-text-color);
+}
 .nav-link.current {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.nav-list {
+  color: var(--fist-text-color);
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.header-list {
+  color: var(--second-text-color);
+}
+/* ----HERO---- */
+.hero {
+  background: var(--backgraund-first-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.hero-btn {
+  font-family: inherit;
+  background: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  cursor: pointer;
+}
+/* ----ADVANT---- */
+.advant-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--fist-text-color);
+}
+.advant-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+/* ----ABOUT---- */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--fist-text-color);
+}
+/* ----TEAM---- */
+.team {
+  background-color: var(--background-second-color);
+}
+.team-user {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--fist-text-color);
+}
+.team-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--second-text-color);
+}
+/* ----FOOTER---- */
+.footer {
+  background-color: var(--backgraund-first-color);
+}
+.logo-footer {
+  color: var(--white-color);
 }
 
 /* футер rgba(255, 255, 255, 0.6); */
